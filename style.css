@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Caprasimo&family=Caveat:wght@700&family=Press+Start+2P&display=swap');
+@font-face {
+  font-family: 'Ginto-Nord';
+  src: url('fonts/Ginto-Nord-700.woff') format('woff');
+}
+/*--FONTS--*/
+
+/*
+font-family: 'Amatic SC', cursive;
+font-family: 'Caprasimo', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Press Start 2P', cursive;
+*/
+
+/*--Main--*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfbec;
+  color: #121213;
+  font-family: 'Roboto', sans-serif;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-rows: repeat(3, 1fr);
+  width: 100vw;
+  height: 100vh;
+  float: none;
+  margin-right: -1.5rem; /* Remove a margem direita */
+  overflow: hidden;
+}
+
+.titleWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-row: 2;
+  cursor: default;
+}
+
+/*--Header--*/
+
+header {
+  position: fixed;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  /*border-bottom: #ffc04a solid 2px;*/
+}
+
+.play,
+.pause {
+  cursor: pointer;
+  font-family: 'Ginto-Nord';
+  background-color: #ffc04a;
+}
+
+.playPause {
+  padding-left: 2px;
+  background-color: #ffc04a;
+}
+
+.playWrap {
+  position: relative;
+  margin: 0 2rem 0 2rem;
+  padding: 0.7rem;
+  background-color: #ffc04a;
+  transition: border-radius 0.3s ease;
+}
+
+.playWrap:hover {
+  border-radius: 10px;
+}
+
+.logo {
+  position: relative;
+  margin: 0 2rem 0 2rem;
+  padding: 0.7rem;
+  font-size: 20px;
+  background-color: #ffc04a;
+  /*background: 90deg,
+  rgba(255, 192, 74, 1) 11%,
+  rgba(255, 223, 74, 1) 49%,
+  rgba(255, 250, 74, 1) 100%;*/
+  cursor: default;
+  font-family: 'Ginto-Nord';
+  transition: border-radius 0.3s ease;
+}
+
+.logo:hover {
+  border-radius: 10px;
+}
+
+.contact {
+  font-size: 20px;
+  font-family: 'Ginto-Nord';
+  cursor: pointer;
+}
+
+.contact:hover {
+  border-radius: 10px;
+}
